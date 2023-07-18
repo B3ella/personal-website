@@ -1,0 +1,55 @@
+---
+interface Props {
+	title: string;
+	Telefone: string;
+	wppExplanation: string;
+}
+
+const { title, Telefone, wppExplanation } = Astro.props;
+---
+
+<section id="contato" class="min-h-screen px-1/10">
+	<h2
+		class="font-condensed md:text-[9.375rem] py-8 text-8xl text-center font-bold"
+	>
+		{title}
+	</h2>
+	<div
+		class="md:grid flex flex-col max-sm:gap-y-20 gap-x-12 grid-cols-2 grid-rows-3 max-w-[90vw]"
+	>
+		<div class="h-fit">
+			<h3 class="text-green text-[3.125rem] italic">Email</h3>
+			<p class="text-3xl font-mono break-words">
+				ioliveira@studentsforliberty.org
+			</p>
+		</div>
+		<div class="h-fit row-start-2">
+			<h3 class="text-green text-[3.125rem] italic">linkedIn</h3>
+			<a
+				class="text-3xl font-mono break-words underline decoration-2 underline-offset-4"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://www.linkedin.com/in/isabella-oliveira-747804201/"
+			>
+				Isabella Oliveira
+			</a>
+		</div>
+		<div class="h-fit row-start-3">
+			<h3 class="text-green text-[3.125rem] italic">{Telefone}</h3>
+			<p class="text-3xl font-mono break-words">21 97282-5450</p>
+		</div>
+		<div class="h-fit">
+			<h3 class="text-green text-[3.125rem] italic">WhatsApp</h3>
+			<p class="text-3xl font-mono break-words">
+				{wppExplanation}
+			</p>
+		</div>
+		<a
+			class="row-span-2 my-auto min-h-fit h-64 mb-20"
+			href="https://wa.me/5521972825450?text=Ol%C3%A1,%20Isabella!%20Est%C3%A1%20dispon%C3%ADvel?%20"
+			target="_blank"
+			rel="noopener noreferrer"
+			><img src="/OlaBella.png" alt="QR-code" width="256" height="256" />
+		</a>
+	</div>
+</section>
