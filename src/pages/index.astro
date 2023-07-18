@@ -1,81 +1,137 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import LiLink from "../components/liLink.astro";
+import Project from "../components/Project.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+<Layout title="Isabella Oliveira - dev">
+	<header class="flex flex-col gap-h-screen/4 min-h-screen px-1/10 pt-14">
+		<h1
+			class="md:text-[9.375rem] text-8xl font-bold font-condensed md-leading-[125px]"
+		>
+			Isabella Oliveira <br />
+			<span
+				class="italic md:text-[6.875rem] text-6xl tracking-[-0.02em] font-thin font-roboto"
+				>Software Developer</span
+			>
+		</h1>
+		<ul class="flex flex-col md:gap-3.75 gap-6">
+			<LiLink href="#portifolio" title="Portifólio" />
+			<LiLink href="#about-me" title="Sobre Mim" />
+			<LiLink href="#contato" title="Contato" />
 		</ul>
-	</main>
+	</header>
+	<section
+		id="portifolio"
+		class="items-center md:gap-h-screen/4 gap-10 text-center flex flex-col mx-1/10 min-h-screen"
+	>
+		<h2
+			class="md:text-[9.375rem] text-8xl mt-12.5 font-bold font-condensed leading-title"
+		>
+			Portifólio
+		</h2>
+		<div class="flex max-sm:flex-col justify-between w-full">
+			<Project
+				title="stock simulator"
+				link1={{
+					displayName: "ver projeto",
+					url: "https://famous-tapioca-e544c4.netlify.app",
+				}}
+				link2={{
+					displayName: "ver código",
+					url: "https://github.com/g41a42/StockSimulator",
+				}}
+			>
+				Simulador de Compra e venda de ações em tempo real, feito com
+				JavaScript e TwelveDataApi
+			</Project>
+			<Project
+				title="LIBERTY SQUARE"
+				link1={{
+					displayName: "Ver Projeto",
+					url: "https://kaleidoscopic-basbousa-9cb81e.netlify.app",
+				}}
+			>
+				Blog e Landing page feitos para um projeto SFLB com Next,
+				styled-components e DatoCMS
+			</Project>
+		</div>
+	</section>
+	<section class="px-1/10 min-h-screen" id="about-me">
+		<h2 class="text-green text-[3.125em] font-condensed italic">
+			Quem sou Eu?
+		</h2>
+		<p class="md:text-[40px] text-3xl text-light md:leading-tight py-4">
+			Eu sou Isabella Oliveira, uma desenvolvedora de software do Rio de
+			Janeiro - Rj <br /><br />
+			Eu amo aprender mais sobre arquitetura de software e como nós pensamos
+			e falamos sobre desenvolvimento
+		</p>
+		<p
+			class="md:text-[40px] text-3xl font-extralight text-light md:leading-tight py-4"
+		>
+			Atualmente eu to trabalhando com Agentes.dev para ajudar
+			organizações políticas a se digitalizar e ter um contato mais direto
+			com seus apoiadores
+			<br />
+			<br />
+			Eu sou autodidata com exceção das minhas Certificações e Livros
+			<br />
+			<br />
+			Hoje em dia eu passo boa parte do meu dia lendo sobre ciência da computação
+			e trabalhando no meu projeto pessoal atual, eu também amo praticar música
+			quando eu tenho tempo livre
+		</p>
+	</section>
+	<section id="contato" class="min-h-screen px-1/10">
+		<h2
+			class="font-condensed md:text-[9.375rem] py-8 text-8xl text-center font-bold"
+		>
+			Contato
+		</h2>
+		<div
+			class="md:grid flex flex-col max-sm:gap-y-20 gap-x-12 grid-cols-2 grid-rows-3 max-w-[90vw]"
+		>
+			<div class="h-fit">
+				<h3 class="text-green text-[3.125rem] italic">Email</h3>
+				<p class="text-3xl font-mono break-words">
+					ioliveira@studentsforliberty.org
+				</p>
+			</div>
+			<div class="h-fit row-start-2">
+				<h3 class="text-green text-[3.125rem] italic">linkedIn</h3>
+				<a
+					class="text-3xl font-mono break-words underline decoration-2 underline-offset-4"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://www.linkedin.com/in/isabella-oliveira-747804201/"
+				>
+					Isabella Oliveira
+				</a>
+			</div>
+			<div class="h-fit row-start-3">
+				<h3 class="text-green text-[3.125rem] italic">Telefone</h3>
+				<p class="text-3xl font-mono break-words">21 97282-5450</p>
+			</div>
+			<div class="h-fit">
+				<h3 class="text-green text-[3.125rem] italic">WhatsApp</h3>
+				<p class="text-3xl font-mono break-words">
+					Você pode me enviar uma mensagem lendo ou clicando nesse
+					QR-code
+				</p>
+			</div>
+			<a
+				class="row-span-2 my-auto min-h-fit h-64 mb-20"
+				href="https://wa.me/5521972825450?text=Ol%C3%A1,%20Isabella!%20Est%C3%A1%20dispon%C3%ADvel?%20"
+				target="_blank"
+				rel="noopener noreferrer"
+				><img
+					src="/OlaBella.png"
+					alt="QR-code"
+					width="256"
+					height="256"
+				/>
+			</a>
+		</div>
+	</section>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
