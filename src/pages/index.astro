@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Project from "../components/Project.astro";
 import Header from "../components/Header.astro";
 import Portifolio from "../components/Portifolio.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
 <Layout title="Isabella Oliveira - dev">
@@ -14,32 +14,14 @@ import Portifolio from "../components/Portifolio.astro";
 		description1="Simulador de Compra e venda de ações em tempo real, feito com JavaScript e TwelveDataApi"
 		description2="Blog e Landing page feitos para um projeto SFLB com Next, styled-components e DatoCMS"
 	/>
-	<section class="px-1/10 min-h-screen" id="about-me">
-		<h2 class="text-green text-[3.125em] font-condensed italic">
-			Quem sou Eu?
-		</h2>
-		<p class="md:text-[40px] text-3xl text-light md:leading-tight py-4">
-			Eu sou Isabella Oliveira, uma desenvolvedora de software do Rio de
-			Janeiro - Rj <br /><br />
-			Eu amo aprender mais sobre arquitetura de software e como nós pensamos
-			e falamos sobre desenvolvimento
-		</p>
-		<p
-			class="md:text-[40px] text-3xl font-extralight text-light md:leading-tight py-4"
-		>
-			Atualmente eu to trabalhando com Agentes.dev para ajudar
-			organizações políticas a se digitalizar e ter um contato mais direto
-			com seus apoiadores
-			<br />
-			<br />
-			Eu sou autodidata com exceção das minhas Certificações e Livros
-			<br />
-			<br />
-			Hoje em dia eu passo boa parte do meu dia lendo sobre ciência da computação
-			e trabalhando no meu projeto pessoal atual, eu também amo praticar música
-			quando eu tenho tempo livre
-		</p>
-	</section>
+	<AboutMe
+		title="Quem sou Eu?"
+		text1="Eu sou Isabella Oliveira, uma desenvolvedora de software do Rio de Janeiro - Rj"
+		text2="Eu amo aprender mais sobre arquitetura de software e como nós pensamos e falamos sobre desenvolvimento"
+		text3="Atualmente eu to trabalhando com Agentes.dev para ajudar organizações políticas a se digitalizar e ter um contato mais direto com seus apoiadores"
+		text4="Eu sou autodidata com exceção das minhas Certificações e Livros"
+		text5="Hoje em dia eu passo boa parte do meu dia lendo sobre ciência da computação e trabalhando no meu projeto pessoal atual, eu também amo praticar música quando eu tenho tempo livre"
+	/>
 	<section id="contato" class="min-h-screen px-1/10">
 		<h2
 			class="font-condensed md:text-[9.375rem] py-8 text-8xl text-center font-bold"
