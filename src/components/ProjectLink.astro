@@ -1,0 +1,19 @@
+---
+export interface link {
+	displayName: string;
+	url: string;
+}
+interface Props {
+	link: link;
+}
+const { link } = Astro.props;
+---
+
+<a
+	href={link.url}
+	class="font-condensed font-normal italic text-4xl p-5 text-dark bg-light rounded-2xl mt-5"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	{link.displayName}
+</a>

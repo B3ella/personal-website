@@ -1,0 +1,23 @@
+---
+import type { link } from "./ProjectLink.astro";
+import ProjectLink from "./ProjectLink.astro";
+
+interface Props {
+	title: string;
+	link1: link;
+	link2?: link;
+}
+
+const { title, link1, link2 } = Astro.props;
+---
+
+<div
+	class="flex flex-wrap gap-y-[15px] justify-evenly content-between lg:max-w-xl max-w-lg text-center max-sm:h-[80vh] max-sm:content-center"
+>
+	<h2 class="text-green font-condensed italic text-7xl uppercase">{title}</h2>
+	<p class="font-mono text-2xl">
+		<slot />
+	</p>
+	<ProjectLink link={link1} />
+	{link2 ? <ProjectLink link={link2} /> : ""}
+</div>
