@@ -1,26 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import LiLink from "../components/liLink.astro";
 import Project from "../components/Project.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Isabella Oliveira - dev">
-	<header class="flex flex-col gap-h-screen/4 min-h-screen px-1/10 pt-14">
-		<h1
-			class="md:text-[9.375rem] text-8xl font-bold font-condensed md-leading-[125px]"
-		>
-			Isabella Oliveira <br />
-			<span
-				class="italic md:text-[6.875rem] text-6xl tracking-[-0.02em] font-thin font-roboto"
-				>Software Developer</span
-			>
-		</h1>
-		<ul class="flex flex-col md:gap-3.75 gap-6">
-			<LiLink href="#portifolio" title="Portifólio" />
-			<LiLink href="#about-me" title="Sobre Mim" />
-			<LiLink href="#contato" title="Contato" />
-		</ul>
-	</header>
+	<Header portifolio="portifólio" aboutMe="Sobre mim" contactMe="contato" />
 	<section
 		id="portifolio"
 		class="items-center md:gap-h-screen/4 gap-10 text-center flex flex-col mx-1/10 min-h-screen"
