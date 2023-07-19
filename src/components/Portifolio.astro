@@ -1,48 +1,48 @@
 ---
-import Project from "./Project.astro";
+import Project from "./Project.astro"
 
 interface Props {
-	title: string;
-	seeCode: string;
-	seeProject: string;
-	description1: string;
-	description2: string;
+    title: string
+    seeCode: string
+    seeProject: string
+    description1: string
+    description2: string
 }
 ---
 
 <section
-	id="portifolio"
-	class="items-center md:gap-h-screen/4 gap-10 text-center flex flex-col mx-1/10 min-h-screen"
+    id="portifolio"
+    class="items-center md:gap-h-screen/4 gap-10 text-center flex flex-col mx-1/10 min-h-screen"
 >
-	<h2
-		class="md:text-[9.375rem] text-8xl mt-12.5 font-bold font-condensed leading-title"
-	>
-		Portifólio
-	</h2>
-	<div class="flex max-sm:flex-col justify-between w-full">
-		<Project
-			title="stock simulator"
-			link1={{
-				displayName: "ver projeto",
-				url: "https://famous-tapioca-e544c4.netlify.app",
-			}}
-			link2={{
-				displayName: "ver código",
-				url: "https://github.com/g41a42/StockSimulator",
-			}}
-		>
-			Simulador de Compra e venda de ações em tempo real, feito com
-			JavaScript e TwelveDataApi
-		</Project>
-		<Project
-			title="LIBERTY SQUARE"
-			link1={{
-				displayName: "Ver Projeto",
-				url: "https://kaleidoscopic-basbousa-9cb81e.netlify.app",
-			}}
-		>
-			Blog e Landing page feitos para um projeto SFLB com Next,
-			styled-components e DatoCMS
-		</Project>
-	</div>
+    <h2
+        class="md:text-[9.375rem] text-8xl mt-12.5 font-bold font-condensed leading-title"
+    >
+        Portifólio
+    </h2>
+    <div class="flex max-sm:flex-col justify-between w-full">
+        <Project
+            title="stock simulator"
+            link1={{
+                displayName: "ver projeto",
+                url: "https://famous-tapioca-e544c4.netlify.app",
+            }}
+            link2={{
+                displayName: "ver código",
+                url: "https://github.com/g41a42/StockSimulator",
+            }}
+        >
+            Simulador de Compra e venda de ações em tempo real, feito com
+            JavaScript e TwelveDataApi
+        </Project>
+        <Project
+            title="LIBERTY SQUARE"
+            link1={{
+                displayName: "Ver Projeto",
+                url: "https://kaleidoscopic-basbousa-9cb81e.netlify.app",
+            }}
+        >
+            Blog e Landing page feitos para um projeto SFLB com Next,
+            styled-components e DatoCMS
+        </Project>
+    </div>
 </section>

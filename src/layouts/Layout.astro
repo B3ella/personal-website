@@ -1,82 +1,92 @@
 ---
 interface Props {
-	title: string;
+    title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<style>
-			body::-webkit-scrollbar {
-				display: none;
-			}
-		</style>
-		<title>{title}</title>
-	</head>
-	<body class="bg-dark text-light-green">
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <style>
+            body::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+        <title>{title}</title>
+    </head>
+    <body class="bg-dark text-light-green">
+        <slot />
+    </body>
 </html>
 <style is:global>
-	@font-face {
-		font-family: "Roboto Condensed";
-		font-weight: 700;
-		src: url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff2")
-				format("woff2"),
-			url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff")
-				format("woff");
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "Roboto";
-		font-weight: 100;
-		font-style: italic;
-		src: url("/fonts/roboto/roboto-thinitalic-webfont.woff2")
-				format("woff2"),
-			url("/fonts/roboto/roboto-thinitalic-webfont.woff") format("woff");
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "Roboto Condensed";
-		font-style: italic;
-		font-weight: 500;
-		src: url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff2")
-				format("woff2"),
-			url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff")
-				format("woff");
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "Roboto Mono";
-		src: url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff2")
-				format("woff2"),
-			url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff")
-				format("woff");
-		font-display: swap;
-	}
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			#da62c4 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #f6f6f6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+    @font-face {
+        font-family: "Roboto Condensed";
+        font-weight: 700;
+        src:
+            url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff2")
+                format("woff2"),
+            url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff")
+                format("woff");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Roboto";
+        font-weight: 100;
+        font-style: italic;
+        src:
+            url("/fonts/roboto/roboto-thinitalic-webfont.woff2") format("woff2"),
+            url("/fonts/roboto/roboto-thinitalic-webfont.woff") format("woff");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Roboto Condensed";
+        font-style: italic;
+        font-weight: 500;
+        src:
+            url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff2")
+                format("woff2"),
+            url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff")
+                format("woff");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Roboto Mono";
+        src:
+            url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff2")
+                format("woff2"),
+            url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff")
+                format("woff");
+        font-display: swap;
+    }
+    :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+            45deg,
+            rgb(var(--accent)),
+            #da62c4 30%,
+            white 60%
+        );
+    }
+    html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+    }
+    code {
+        font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            Liberation Mono,
+            DejaVu Sans Mono,
+            Bitstream Vera Sans Mono,
+            Courier New,
+            monospace;
+    }
 </style>
