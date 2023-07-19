@@ -8,6 +8,9 @@ module.exports = {
 				roboto: ["Roboto", "sans-serif"],
 				mono: ["Roboto Mono", "monospace"],
 			},
+			fontSize: {
+				"10xl": "9rem",
+			},
 			colors: {
 				green: "#84a98c",
 				dark: "#090c09",

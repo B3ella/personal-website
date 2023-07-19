@@ -10,13 +10,14 @@ interface Props {
 const { aboutMe, portifolio, contactMe } = Astro.props;
 ---
 
-<header class="flex flex-col gap-h-screen/4 min-h-screen px-1/10 pt-14">
+<header
+	class="flex flex-col justify-between min-h-screen max-sm:min-h-[90vh] max-sm:mb-[10vh] px-1/10 py-14"
+>
 	<h1
-		class="md:text-[9.375rem] text-8xl font-bold font-condensed md-leading-[125px]"
+		class="xl:text-10xl md:text-9xl text-7xl tracking-tight font-bold font-condensed xl:leading-[165px] mb-12"
 	>
 		Isabella Oliveira <br />
-		<span
-			class="italic md:text-[6.875rem] text-6xl tracking-[-0.02em] font-thin font-roboto"
+		<span class="italic text-light tracking-tighter font-thin font-roboto"
 			>Software Developer</span
 		>
 	</h1>
