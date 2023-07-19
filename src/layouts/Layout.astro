@@ -26,8 +26,38 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto+Mono&family=Roboto:wght@100&display=swap");
-
+	@font-face {
+		font-family: "Roboto Condensed";
+		font-weight: 700;
+		src: url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff2")
+				format("woff2"),
+			url("/fonts/roboto-condensed/robotocondensed-bold-webfont.woff")
+				format("woff");
+	}
+	@font-face {
+		font-family: "Roboto";
+		font-weight: 100;
+		font-style: italic;
+		src: url("/fonts/roboto/roboto-thinitalic-webfont.woff2")
+				format("woff2"),
+			url("/fonts/roboto/roboto-thinitalic-webfont.woff") format("woff");
+	}
+	@font-face {
+		font-family: "Roboto Condensed";
+		font-style: italic;
+		font-weight: 500;
+		src: url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff2")
+				format("woff2"),
+			url("/fonts/roboto-condensed/robotocondensed-italic-webfont.woff")
+				format("woff");
+	}
+	@font-face {
+		font-family: "Roboto Mono";
+		src: url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff2")
+				format("woff2"),
+			url("/fonts/roboto-mono/robotomono-variablefont_wght-webfont.woff")
+				format("woff");
+	}
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(
