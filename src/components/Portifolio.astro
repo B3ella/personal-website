@@ -12,14 +12,16 @@ interface Props {
 
 <section
     id="portifolio"
-    class="items-center md:gap-40 gap-10 text-center flex flex-col mx-1/10 min-h-screen"
+    class="items-center gap-40 text-center flex flex-col mx-1/10 min-h-screen"
 >
     <h2
-        class="md:text-9xl md:leading-title tracking-tight text-8xl mt-12.5 font-bold font-condensed leading-title"
+        class="text-9xl md:leading-title tracking-tight max-sm:text-7xl mt-12.5 font-bold font-condensed leading-title"
     >
         Portifólio
     </h2>
-    <div class="flex max-sm:flex-col gap-20 justify-between w-full">
+    <div
+        class="flex max-md:flex-col md:gap-20 gap-40 items-center justify-between w-full mb-40"
+    >
         <Project
             title="stock simulator"
             link1={{
