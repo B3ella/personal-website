@@ -26,9 +26,14 @@ module.exports = {
                 12.5: "3.125rem",
             },
             lineHeight: {
-                title: "125px",
+                "title-tight": 1.1,
+                title: 1.2,
+                "title-loose": 1.3,
+                "p-tight": 1.3,
+                p: 1.4,
+                "p-loose": 1.5,
             },
         },
     },
     plugins: [],
-}
+};
