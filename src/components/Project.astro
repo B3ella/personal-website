@@ -14,7 +14,11 @@ const { title, link1, link2 } = Astro.props;
 <div
     class="flex flex-wrap gap-y-[15px] justify-evenly content-between lg:max-w-xl max-w-lg text-center max-sm:h-[80vh] max-sm:content-center"
 >
-    <h3 class="text-green font-condensed italic text-7xl uppercase">{title}</h3>
+    <h3
+        class="text-green font-condensed italic text-7xl leading-[1.3] uppercase"
+    >
+        {title}
+    </h3>
     <p class="font-mono text-2xl">
         <slot />
     </p>
