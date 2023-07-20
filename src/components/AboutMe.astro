@@ -12,26 +12,20 @@ const { title, text1, text2, text3, text4, text5 } = Astro.props;
 ---
 
 <section class="px-1/10 py-32 min-h-screen" id="about-me">
-    <h2 class="text-green text-[3.125em] font-condensed italic">
+    <h2
+        class="text-green text-6xl leading-title tracking-tight pb-6 font-condensed italic"
+    >
         {title}
     </h2>
-    <p class="md:text-[40px] text-3xl text-light md:leading-tight py-4">
-        {text1}
-        <br />
-        <br />
-        {text2}
-        <br />
-        <br />
-    </p>
-    <p
-        class="md:text-[40px] text-3xl font-extralight text-light md:leading-tight py-4"
+    <div class="text-3xl text-light max-w-3xl leading-p-tight py-4">
+        <p class="py-2">{text1}</p>
+        <p class="py-2">{text2}</p>
+    </div>
+    <div
+        class="text-3xl font-extralight max-w-3xl text-light leading-p-tight tracking-wide py-4"
     >
-        {text3}
-        <br />
-        <br />
-        {text4}
-        <br />
-        <br />
-        {text5}
-    </p>
+        <p class="py-2">{text3}</p>
+        <p class="py-2">{text4}</p>
+        <p class="py-2">{text5}</p>
+    </div>
 </section>
