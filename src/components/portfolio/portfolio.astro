@@ -6,10 +6,20 @@ interface Props {
     seeCode: string;
     seeProject: string;
     description1: string;
+    title1: string;
     description2: string;
+    title2: string;
 }
 
-const { title, description1, description2, seeCode, seeProject } = Astro.props;
+const {
+    title,
+    description1,
+    title1,
+    description2,
+    title2,
+    seeCode,
+    seeProject,
+} = Astro.props;
 ---
 
 <section
@@ -25,7 +35,7 @@ const { title, description1, description2, seeCode, seeProject } = Astro.props;
         class="flex max-md:flex-col md:gap-20 gap-40 items-center justify-between w-full mb-40"
     >
         <Project
-            title="stock simulator"
+            title={title1}
             link1={{
                 displayName: seeProject,
                 url: "https://famous-tapioca-e544c4.netlify.app",
@@ -38,7 +48,7 @@ const { title, description1, description2, seeCode, seeProject } = Astro.props;
             {description1}
         </Project>
         <Project
-            title="Site UJL"
+            title={title2}
             link1={{
                 displayName: seeProject,
                 url: "https://kaleidoscopic-basbousa-9cb81e.netlify.app",
