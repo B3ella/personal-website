@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header/Header.astro";
+import Portifolio from "../components/portfolio/portfolio.astro";
+import AboutMe from "../components/AboutMe.astro";
+import ContactMe from "../components/ContactMe.astro";
+---
+
+<Layout title="Isabella Oliveira - dev" lang="pt-BR">
+    <Header portifolio="portifólio" aboutMe="Sobre mim" contactMe="contato" />
+    <Portifolio
+        title="portfólio"
+        seeCode="ver código"
+        seeProject="ver Projeto"
+        title1="Stock simulator"
+        description1="Simulador de Compra e venda de ações em tempo real, feito com JavaScript e TwelveDataApi"
+        title2="Site UJL"
+        description2="Responsável pelo desenvolvimento do mapa, blog e da otimização, tornando o site mais acessível e performático e o código mais limpo e flexível "
+    />
+    <AboutMe
+        title="Quem sou Eu?"
+        text1="Eu sou Isabella Oliveira, uma desenvolvedora de software do Rio de Janeiro - Rj"
+        text2="Eu sou uma estudante de ciência da computação, mas boa parte do meu aprendizado vem de Certificações e Livros"
+        text3="Atualmente trabalho com a Agentes.dev ajudando organizações políticas a se digitalizar e ter um contato mais direto com seus apoiadores"
+        text4="Eu amo aprender mais sobre arquitetura de software e código limpo"
+        text5="Hoje em dia eu passo boa parte do meu dia lendo sobre ciência da computação e trabalhando no meu projeto pessoal atual, eu também amo praticar música quando eu tenho tempo livre"
+    />
+    <ContactMe
+        Telefone="telefone"
+        title="Contato"
+        wppExplanation="Você pode me enviar uma mensagem lendo ou clicando nesse QR-code"
+    />
+</Layout>
