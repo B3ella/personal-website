@@ -1,12 +1,35 @@
 ---
 import Experiencia from "./experiencia.astro"
+import Skills from "./skill.astro"
 ---
 
-<section id="contact-me" class="min-h-screen px-1/10">
-    <h2
-        class="font-condensed md:text-8xl pt-8 text-8xl mb-24 lg:mb-40 font-bold"
-    >
+<section id="curriculo" class="min-h-screen px-1/10">
+    <h2 class="font-condensed md:text-8xl pt-8 text-8xl mb-24 lg:mb-40 font-bold" >
+        Currículo
     </h2>
+    <h3 class="px-1/10 text-light-green font-condensed italic text-6xl" >
+        Educação
+    </h3>
+        <p class="px-1/10 pb-8 text-green text-3xl md:text-4xl lg:text-5xl italic font-condensed">
+        Ciência da computação - UniCEUB
+    </p>
+    <h3 class="px-1/10 text-light-green font-condensed italic text-6xl" >
+        Experiência
+    </h3>
     <Experiencia titulo="Assistente de Tecnologia - Campanha deputada estadual" datas="06/2022 - 10/2022" descricao="Analisou dados externos e internos com objetivo de gerar leads para a campanha. Desenvolveu um protocolo de cibersegurança com foco em mudanças culturais e na definição de níveis de acesso, assegurando total confidencialidade dos dados sensíveis. Desenvolveu e manteve o Site da campanha" />
     <Experiencia titulo="Coordenadora de Tecnologia - Campanha vereadora" datas="05/2024 - 10/2024" descricao="Liderou a equipe de tecnologia coordenando projetos de desenvolvimento de software, análise de dados e segurança da informação. Desenvolveu e implementou: Um CRM proprietário, utilizando MySQL e Next.js. Armazenando os dados relevantes de forma prática e eficiente, diminuindo o tempo médio de processos de análise de dados em 30 vezes. Web Scrapers e ferramentas de análise de dados públicos, utilizando python. Analisando milhões de perfis, gerando dezenas de milhares de Leads dentro do nosso perfil de interesse e alimentando nosso CRM. O site público da campanha em Astro replicando com precisão o design idealizado pelo setor de comunicação. Um protocolo de segurança da informação garantindo a proteção dos dados sigilosos da campanha." />
+    <h3 class="px-1/10 text-light-green font-condensed italic text-6xl" >
+        Habilidades
+    </h3>
+    <Skills area="Linguagens de Programação" skills="Typescript, JavaScript, Python, SQL, Go, Rust"/>
+    <Skills area="Frameworks e bibliotecas" skills="Next.Js (React, Tailwind.css, Prisma), Pandas, Django"/>
+    <Skills area="Bases de dados" skills="PostgreSQL, MySQL, MongoDB"/>
+    <h3 class="px-1/10 text-light-green font-condensed italic text-6xl" >
+        Idiomas
+    </h3>
+    <p class="px-1/10 pb-8 text-green text-3xl md:text-4xl lg:text-5xl italic font-condensed">
+        Português - nativo
+        <br />
+        Inglês - intermediário-avançado (b2)
+    </p>
 </section>
