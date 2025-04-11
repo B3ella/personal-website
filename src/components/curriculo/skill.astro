@@ -1,0 +1,17 @@
+---
+interface Props {
+  area: string;
+  skills: string;
+}
+
+const {area, skills} = Astro.props;
+---
+
+<section class="px-1/10 py-4" id="about-me">
+  <h4 class="text-green text-3xl md:text-4xl lg:text-5xl italic font-condensed">
+    {area}
+  </h4>
+  <p class="text-3xl text-light-green max-w-3xl leading-p-tight py-4 font-light" >
+    {skills}
+  </p>
+</section>
