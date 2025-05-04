@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/blogCard.astro"
 ---
 
 <Layout title="Isabella Oliveira - dev" lang="pt-BR">
+        <ul class="min-h-screen flex flex-wrap gap-4 w-full justify-center">
+                <Card title="A importância do clean code: princípio acima de metodologia" link="/blog/1" author="Isabella Oliveira" />
+                <Card title="A evolução das linguagens de programação: A importância e as armadilhas das linguagens de alto nível" link="/blog/2" author="Isabella Oliveira" />
+        </ul>
 </Layout>
