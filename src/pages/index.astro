@@ -1,22 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/header/Header.astro";
-import Portifolio from "../components/portfolio/portfolio.astro";
 import AboutMe from "../components/AboutMe.astro";
 import ContactMe from "../components/ContactMe.astro";
+import Portifolio from "../components/portifolio_hard.astro"
 ---
 
 <Layout title="Isabella Oliveira - dev" lang="pt-BR">
     <Header portifolio="portifólio" aboutMe="Sobre mim" contactMe="contato" />
-    <Portifolio
-        title="portfólio"
-        seeCode="ver código"
-        seeProject="ver Projeto"
-        title1="Stock simulator"
-        description1="Simulador de Compra e venda de ações em tempo real, feito com JavaScript e TwelveDataApi"
-        title2="Site UJL"
-        description2="Responsável pelo desenvolvimento do mapa, blog e da otimização, tornando o site mais acessível e performático e o código mais limpo e flexível "
-    />
+    <Portifolio />
     <AboutMe
         title="Quem sou Eu?"
         text1="Eu sou Isabella Oliveira, uma desenvolvedora de software do Rio de Janeiro - Rj"
