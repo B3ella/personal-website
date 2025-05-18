@@ -1,0 +1,16 @@
+---
+interface Props {
+  text: string;
+  href: string;
+}
+
+const { text, href } = await Astro.props;
+---
+<a
+    href={href}
+    class="font-mono text-2xl leading-title-tight tracking-tight px-8 py-4 text-dark capitalize bg-light rounded-2xl"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    {text}
+</a>

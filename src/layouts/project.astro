@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = await Astro.props;
+---
+<div
+    class="flex flex-wrap gap-5 justify-evenly content-start lg:max-w-xl md:max-w-lg text-center"
+>
+    <h3
+        class="text-green font-condensed italic text-7xl leading-title-tight tracking-tight uppercase"
+    >
+        {title}
+    </h3>
+    <p class="font-mono text-2xl leading-p w-fit">
+        {description}
+    </p>
+    <slot />
+</div>
